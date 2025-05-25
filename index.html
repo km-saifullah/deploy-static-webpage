@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Blog</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-800 font-sans">
+    <!-- Hero Section -->
+    <header
+      class="relative h-screen bg-cover bg-center"
+      style="
+        background-image: url('https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+      "
+    >
+      <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+      <div
+        class="relative z-10 flex flex-col justify-center items-center h-full text-white text-center px-4"
+      >
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to My Blog</h1>
+        <p class="text-lg md:text-xl max-w-xl">
+          Thoughts, tutorials, and stories from a MERN Stack Developer who loves
+          to write and share.
+        </p>
+        <button
+          id="exploreBtn"
+          class="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-semibold transition"
+        >
+          Explore Blogs
+        </button>
+      </div>
+    </header>
+
+    <!-- Introduction -->
+    <section class="py-16 px-6 text-center bg-gray-100">
+      <h2 class="text-3xl font-bold mb-4">Hi, I'm Khaled Md Saifullah</h2>
+      <p class="max-w-2xl mx-auto text-gray-600">
+        I'm a MERN Stack Developer who enjoys crafting beautiful web experiences
+        and writing about development, life, and everything in between.
+      </p>
+    </section>
+
+    <!-- Blog Posts -->
+    <section id="blogs" class="py-16 px-6 bg-white">
+      <h2 class="text-3xl font-bold text-center mb-12">Latest Posts</h2>
+      <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
+        <!-- Blog Card 1 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="https://images.pexels.com/photos/965345/pexels-photo-965345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Blog 1"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">
+              Why JavaScript is Still King in 2025
+            </h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Explore how JavaScript continues to dominate the web development
+              ecosystem and why you should still invest in mastering it.
+            </p>
+            <a href="#" class="text-blue-600 hover:underline read-more"
+              >Read more →</a
+            >
+          </div>
+        </div>
+
+        <!-- Blog Card 2 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="https://images.pexels.com/photos/3888151/pexels-photo-3888151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Blog 2"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">
+              Top 10 Tools Every Developer Should Know
+            </h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Boost your productivity with these essential tools for web
+              developers and software engineers in 2025.
+            </p>
+            <a href="#" class="text-blue-600 hover:underline read-more"
+              >Read more →</a
+            >
+          </div>
+        </div>
+
+        <!-- Blog Card 3 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="https://images.pexels.com/photos/267389/pexels-photo-267389.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Blog 3"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">
+              How to Start a Tech Blog and Grow It
+            </h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Learn how to set up your own blog, write engaging posts, and grow
+              an audience from scratch.
+            </p>
+            <a href="#" class="text-blue-600 hover:underline read-more"
+              >Read more →</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10 text-center">
+      <p
+        id="footerText"
+        class="mb-2 cursor-pointer hover:text-gray-300 transition"
+      >
+        © 2025 Khaled Md Saifullah. All rights reserved.
+      </p>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
